@@ -19,10 +19,23 @@
         <script>
             window.alert("before");
         </script>
-        
+
+        <button type="button" id="btn">ボタンをクリック！</button>
+
+        <script>
+            function butotnClick()
+            {
+                window.alert('ボタンがクリックされました２');
+            }
+            
+            let button2 = document.getElementById('btn');
+            
+            // addEventListener( 'イベント', 処理)で要素にイベントが発火した際に処理を実行する
+            button2.addEventListener('click', butotnClick);
+        </script>
 
         <!-- <iframe width="1024" height="512" loading="lazy" src="https://playcanv.as/p/smwveXjb/"></iframe> -->
-        <iframe id="app-frame" width="1024" height="512" loading="lazy" onload=
+<!--         <iframe id="app-frame" width="1024" height="512" loading="lazy" onload=
         "
             window.alert('complete');
             console.log( 'message send..' );
@@ -31,7 +44,11 @@
                 score: 10,
             }, 'https://playcanv.as' );
         " 
-        src="https://playcanv.as/e/p/smwveXjb/">
+        src="https://playcanv.as/e/p/smwveXjb/"> -->
+
+        <iframe id="app-frame" width="1024" height="512" loading="lazy" src="https://playcanv.as/e/p/smwveXjb/">
+
+        
         
             
         <!-- <script>
