@@ -17,14 +17,18 @@
 <!--         <iframe width="1024" height="512" loading="lazy" src="https://playcanv.as/p/smwveXjb/"></iframe> -->
         <iframe id="app-frame" width="1024" height="512" loading="lazy" src="https://playcanv.as/e/p/smwveXjb/">
 
+        <script>
+            alert("Hello World!");
+        </script>
+
         
-    <script>
-        console.log( "message send.." );
-        const iframe = document.getElementById("app-frame");
-        iframe.contentWindow.postMessage({
-            score: 10,
-        }, "https://playcanv.as");
-    </script>
+        <script>
+            console.log( "message send.." );
+            const iframe = document.getElementById("app-frame");
+            iframe.contentWindow.postMessage({
+                score: 10,
+            }, "https://playcanv.as");
+        </script>
             
     </body>
     
