@@ -25,7 +25,12 @@
         <script>
             function butotnClick()
             {
-                window.alert('ボタンがクリックされました２');
+                window.alert('ボタンがクリックされました');
+                console.log( 'message send..' );
+                const iframe = document.getElementById( 'app-frame' );
+                iframe.contentWindow.postMessage({
+                    score: 10,
+                }, 'https://playcanv.as' );
             }
             
             let button2 = document.getElementById('btn');
